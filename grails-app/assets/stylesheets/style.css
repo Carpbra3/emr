@@ -1,0 +1,11 @@
+.sidebar {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    top: 55px;
+    bottom: 0;
+    z-index: 1;
+    padding: 30px 10px 10px 0;
+    border-right: 1px solid #eee;
+    /* min-width: 225px; */
+    width: inherit;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.emr.controller.PatientControllerSpec" tests="5" skipped="0" failures="1" errors="0" timestamp="2020-10-15T20:53:01" hostname="DESKTOP-49RDH2U" time="3.89">
+  <properties/>
+  <testcase name="search() should display search page" classname="com.emr.controller.PatientControllerSpec" time="3.53"/>
+  <testcase name="detail() should display detail page" classname="com.emr.controller.PatientControllerSpec" time="0.235"/>
+  <testcase name="create() should display create page" classname="com.emr.controller.PatientControllerSpec" time="0.015"/>
+  <testcase name="save() should redirect to detail page" classname="com.emr.controller.PatientControllerSpec" time="0.079"/>
+  <testcase name="edit() should display edit page" classname="com.emr.controller.PatientControllerSpec" time="0.031">
+    <failure message="Condition not satisfied:&#10;&#10;view == '/patient/edit/' + patient.id&#10;|    |                   | |       |&#10;|    |                   | |       1&#10;|    |                   | com.emr.Patient : 1&#10;|    |                   /patient/edit/1&#10;|    false&#10;|    2 differences (86% similarity)&#10;|    /patient/edit(--)&#10;|    /patient/edit(/1)&#10;/patient/edit&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+view == '/patient/edit/' + patient.id
+|    |                   | |       |
+|    |                   | |       1
+|    |                   | com.emr.Patient : 1
+|    |                   /patient/edit/1
+|    false
+|    2 differences (86% similarity)
+|    /patient/edit(--)
+|    /patient/edit(/1)
+/patient/edit
+
+	at com.emr.controller.PatientControllerSpec.edit() should display edit page(PatientControllerSpec.groovy:89)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

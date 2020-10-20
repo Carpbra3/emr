@@ -1,0 +1,6 @@
+#Sat, 17 Oct 2020 16:27:02 -0600
+
+info.app.version=0.1
+info.app.name=EMR
+grails.env=development
+info.app.grailsVersion=3.1.14
