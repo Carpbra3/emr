@@ -67,7 +67,7 @@
     <property name="dynamic.classpath" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,7 +110,7 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Bcar4\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -119,12 +119,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603151984319</updated>
-      <workItem from="1603151989331" duration="138000" />
+      <workItem from="1603151989331" duration="358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138000" />
+    <option name="totallyTimeSpent" value="358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
@@ -141,7 +141,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.32922733" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -156,7 +156,7 @@
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="right" id="Gradle" visible="true" weight="0.3294621" />
+      <window_info anchor="right" id="Gradle" weight="0.3294621" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
@@ -165,6 +165,187 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TraitInjectorService">
+    <option name="state">
+      <map>
+        <entry key="emr.EMR.main">
+          <value>
+            <StateHolder>
+              <option name="knownFactories">
+                <list>
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.1.14/d58693177ea84f3a6de2dce72d9bf628f1645848/grails-validation-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.1.14/b617f35c7cc8f9ca01090592e1c6397c040bc16b/grails-plugin-async-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.2/519bc1bffb2afa10c93b92e872d49a5238e96558/cache-3.0.2.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-taglib/3.1.14/52511060e59931ad1abf3ba135439e6414106bb8/grails-web-taglib-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-gsp/3.1.14/e3ae875757cbf385303e5ae28572583f6481e48d/grails-plugin-gsp-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.1.14/36a82e63bb10f7f2a1d8e0e74679076752ebe0bc/grails-plugin-interceptors-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-taglib/3.1.14/312259c62af17090cc355589fccc88b339bcc5a3/grails-taglib-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/5.0.12.RELEASE/23c8a739eb7435678fe635c9434c8c8ed02c1288/grails-datastore-gorm-support-5.0.12.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.1.14/32f19260daa053d9093c958c396828bd005b5de4/grails-web-common-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.1.14/6cfb5b880013b23ab0d99d8fd401668f618f883c/grails-plugin-codecs-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate4/5.0.11/38c1543b5cbfdda925f06b2dc69ac60a11e08897/hibernate4-5.0.11.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.1.14/ff8ce8d898c8f54c590f0f76fd8ea8f20723b765/grails-web-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.1.14/e8b9bbe14628f16022e4efd8bcc83dac439d5318/grails-web-databinding-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.1.14/65f800571add6fd07915ef4be3ff2049334209f6/grails-plugin-controllers-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.1.14/852f3bc2a2e92c9a6ca450b1f3fcef3244a244e5/grails-plugin-rest-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.1.14/bf308dc151ded05607ee9ae0b35e7142391f0293/grails-core-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.1.14/28409ef9fec8192623a4fabc47c9a303ec5cb562/grails-web-url-mappings-3.1.14.jar!/META-INF/services/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.1.14/a0f862b0967d197dcedbe5479bee1afa1abdf17f/grails-plugin-domain-class-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.1.14/28409ef9fec8192623a4fabc47c9a303ec5cb562/grails-web-url-mappings-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.1.14/ce91efb9711cc8b5cb1f50600d12f1cd9cfa273a/grails-plugin-services-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/spring-security-core/3.1.2/ca54acbad681d79bd545373db6dac234a637009f/spring-security-core-3.1.2.jar!/META-INF/grails.factories" />
+                </list>
+              </option>
+              <option name="traits">
+                <SerializableStringMultiMap>
+                  <option name="underlyingMap">
+                    <map>
+                      <entry key="Controller">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.Controller" />
+                            <option value="grails.artefact.AsyncController" />
+                            <option value="grails.artefact.gsp.TagLibraryInvoker" />
+                            <option value="grails.artefact.controller.RestResponder" />
+                            <option value="grails.plugin.springsecurity.ControllerMixin" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="Domain">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.DomainClass" />
+                            <option value="grails.web.databinding.WebDataBinding" />
+                            <option value="grails.gorm.Entity" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="Interceptor">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.Interceptor" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="Service">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.Service" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="TagLib">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.TagLibrary" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="TagLibrary">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.TagLibrary" />
+                          </list>
+                        </value>
+                      </entry>
+                    </map>
+                  </option>
+                </SerializableStringMultiMap>
+              </option>
+            </StateHolder>
+          </value>
+        </entry>
+        <entry key="emr.EMR.test">
+          <value>
+            <StateHolder>
+              <option name="knownFactories">
+                <list>
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-validation/3.1.14/d58693177ea84f3a6de2dce72d9bf628f1645848/grails-validation-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-async/3.1.14/b617f35c7cc8f9ca01090592e1c6397c040bc16b/grails-plugin-async-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/cache/3.0.2/519bc1bffb2afa10c93b92e872d49a5238e96558/cache-3.0.2.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-taglib/3.1.14/52511060e59931ad1abf3ba135439e6414106bb8/grails-web-taglib-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-gsp/3.1.14/e3ae875757cbf385303e5ae28572583f6481e48d/grails-plugin-gsp-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-interceptors/3.1.14/36a82e63bb10f7f2a1d8e0e74679076752ebe0bc/grails-plugin-interceptors-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-taglib/3.1.14/312259c62af17090cc355589fccc88b339bcc5a3/grails-taglib-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-datastore-gorm-support/5.0.12.RELEASE/23c8a739eb7435678fe635c9434c8c8ed02c1288/grails-datastore-gorm-support-5.0.12.RELEASE.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-common/3.1.14/32f19260daa053d9093c958c396828bd005b5de4/grails-web-common-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-codecs/3.1.14/6cfb5b880013b23ab0d99d8fd401668f618f883c/grails-plugin-codecs-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/hibernate4/5.0.11/38c1543b5cbfdda925f06b2dc69ac60a11e08897/hibernate4-5.0.11.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web/3.1.14/ff8ce8d898c8f54c590f0f76fd8ea8f20723b765/grails-web-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-databinding/3.1.14/e8b9bbe14628f16022e4efd8bcc83dac439d5318/grails-web-databinding-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-controllers/3.1.14/65f800571add6fd07915ef4be3ff2049334209f6/grails-plugin-controllers-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-rest/3.1.14/852f3bc2a2e92c9a6ca450b1f3fcef3244a244e5/grails-plugin-rest-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-core/3.1.14/bf308dc151ded05607ee9ae0b35e7142391f0293/grails-core-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.1.14/28409ef9fec8192623a4fabc47c9a303ec5cb562/grails-web-url-mappings-3.1.14.jar!/META-INF/services/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-testing/3.1.14/7f5a2080c8eebf2572e794104c0b1c42132c748b/grails-plugin-testing-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-domain-class/3.1.14/a0f862b0967d197dcedbe5479bee1afa1abdf17f/grails-plugin-domain-class-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-web-url-mappings/3.1.14/28409ef9fec8192623a4fabc47c9a303ec5cb562/grails-web-url-mappings-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails/grails-plugin-services/3.1.14/ce91efb9711cc8b5cb1f50600d12f1cd9cfa273a/grails-plugin-services-3.1.14.jar!/META-INF/grails.factories" />
+                  <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/spring-security-core/3.1.2/ca54acbad681d79bd545373db6dac234a637009f/spring-security-core-3.1.2.jar!/META-INF/grails.factories" />
+                </list>
+              </option>
+              <option name="traits">
+                <SerializableStringMultiMap>
+                  <option name="underlyingMap">
+                    <map>
+                      <entry key="Controller">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.Controller" />
+                            <option value="grails.artefact.AsyncController" />
+                            <option value="grails.artefact.gsp.TagLibraryInvoker" />
+                            <option value="grails.artefact.controller.RestResponder" />
+                            <option value="grails.plugin.springsecurity.ControllerMixin" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="Domain">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.DomainClass" />
+                            <option value="grails.web.databinding.WebDataBinding" />
+                            <option value="grails.gorm.Entity" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="Interceptor">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.Interceptor" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="Service">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.Service" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="TagLib">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.TagLibrary" />
+                          </list>
+                        </value>
+                      </entry>
+                      <entry key="TagLibrary">
+                        <value>
+                          <list>
+                            <option value="grails.artefact.TagLibrary" />
+                          </list>
+                        </value>
+                      </entry>
+                    </map>
+                  </option>
+                </SerializableStringMultiMap>
+              </option>
+            </StateHolder>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
