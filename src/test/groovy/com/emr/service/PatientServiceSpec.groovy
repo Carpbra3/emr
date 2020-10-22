@@ -1,6 +1,8 @@
-package com.emr
+package com.emr.service
 
-
+import com.emr.Patient
+import com.emr.PatientService
+import com.emr.TestHelper
 import grails.test.mixin.Mock
 import grails.test.mixin.TestFor
 import spock.lang.Specification

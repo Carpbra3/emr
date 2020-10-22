@@ -86,7 +86,7 @@ class PatientControllerSpec extends Specification {
         when:
             controller.edit(patient)
         then:
-            view == '/patient/edit/'
+            view == '/patient/edit'
     }
 
 
