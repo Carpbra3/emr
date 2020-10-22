@@ -1,0 +1,14 @@
+.gradle/*
+.idea
+/build/*
+/documents
+/node_modules
+/out
+/webapps
+/.asscache
+*.iml
+.nyc_output/
+.svn/
+/coverage/
+/grails-app/conf/application-development.yml
+/grails-app/assets/javascripts/dist/
