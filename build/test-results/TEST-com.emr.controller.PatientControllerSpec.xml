@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.emr.controller.PatientControllerSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-22T23:11:42" hostname="DESKTOP-49RDH2U" time="3.771">
+<testsuite name="com.emr.controller.PatientControllerSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-23T02:27:06" hostname="DESKTOP-49RDH2U" time="3.043">
   <properties/>
-  <testcase name="search() should display search page" classname="com.emr.controller.PatientControllerSpec" time="3.436"/>
-  <testcase name="detail() should display detail page" classname="com.emr.controller.PatientControllerSpec" time="0.223"/>
-  <testcase name="create() should display create page" classname="com.emr.controller.PatientControllerSpec" time="0.01"/>
-  <testcase name="save() should redirect to detail page" classname="com.emr.controller.PatientControllerSpec" time="0.082"/>
-  <testcase name="edit() should display edit page" classname="com.emr.controller.PatientControllerSpec" time="0.02"/>
+  <testcase name="search() should display search page" classname="com.emr.controller.PatientControllerSpec" time="2.856"/>
+  <testcase name="detail() should display detail page" classname="com.emr.controller.PatientControllerSpec" time="0.124"/>
+  <testcase name="create() should display create page" classname="com.emr.controller.PatientControllerSpec" time="0.008"/>
+  <testcase name="save() should redirect to detail page" classname="com.emr.controller.PatientControllerSpec" time="0.043"/>
+  <testcase name="edit() should display edit page" classname="com.emr.controller.PatientControllerSpec" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

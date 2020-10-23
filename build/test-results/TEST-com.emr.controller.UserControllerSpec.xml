@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.emr.controller.UserControllerSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-22T23:11:46" hostname="DESKTOP-49RDH2U" time="0.92">
+<testsuite name="com.emr.controller.UserControllerSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-23T02:27:09" hostname="DESKTOP-49RDH2U" time="0.527">
   <properties/>
-  <testcase name="profile() should display detail page" classname="com.emr.controller.UserControllerSpec" time="0.85"/>
-  <testcase name="create() should display create page" classname="com.emr.controller.UserControllerSpec" time="0.04"/>
-  <testcase name="edit should display edit page" classname="com.emr.controller.UserControllerSpec" time="0.03"/>
+  <testcase name="profile() should display detail page" classname="com.emr.controller.UserControllerSpec" time="0.471"/>
+  <testcase name="create() should display create page" classname="com.emr.controller.UserControllerSpec" time="0.029"/>
+  <testcase name="edit should display edit page" classname="com.emr.controller.UserControllerSpec" time="0.027"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

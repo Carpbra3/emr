@@ -22,6 +22,12 @@ class TestHelper {
         return Holders.grailsApplication.mainContext.getBean("userService")
     }
 
+    static UserService getUserServiceWithDependencies(){
+        UserService userService = getUserService()
+        userService.springSecurityService = getSpringSecurityService()
+        return userService
+    }
+
 
     static doWithSpring = {
         initService(InitService)
