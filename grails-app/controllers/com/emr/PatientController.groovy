@@ -77,4 +77,8 @@ class PatientController {
     def delete() {
 
     }
+
+    def vitals(Patient patientInstance){
+        render view: 'vitals'
+    }
 }

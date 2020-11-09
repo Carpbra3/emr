@@ -5,6 +5,7 @@ import com.emr.Requestmap
 import com.emr.Role
 import com.emr.User
 import com.emr.UserRole
+import enums.Sex
 import grails.transaction.Transactional
 
 @Transactional
@@ -133,9 +134,9 @@ class InitService {
                 firstName: "Brandon",
                 lastName:  "Carpenter",
                 middleName: "Nicholas",
-
+                dateOfBirth: new Date(119, 01, 01),
+                sex: Sex.MALE,
                 createdDate: new Date(),
-                dateOfBirth: new Date(119, 01, 01)
         ).save(flush:true, failOnError: true)
     }
 }

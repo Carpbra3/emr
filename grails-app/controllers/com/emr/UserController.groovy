@@ -27,6 +27,11 @@ class UserController {
         ]
     }
 
+    /**
+     * Renders user edit page
+     * @param userInstance
+     * @return
+     */
     def edit(User userInstance){
 
         render view: 'edit', model:[

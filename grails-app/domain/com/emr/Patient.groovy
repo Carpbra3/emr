@@ -1,17 +1,24 @@
 package com.emr
 
+import enums.Gender
+import enums.Sex
+
 class Patient {
 
     String firstName
     String middleName
     String lastName
     Date dateOfBirth
-    // sex ... ask Mandy if this needs more than just male female :)
+    Sex sex
+//    Gender gender
 
     Date createdDate
     Date deletedDate
     Date modifiedDate
 
+    static hasMany = [
+            vitals: Vital
+    ]
 
     static constraints = {
         middleName nullable: true
