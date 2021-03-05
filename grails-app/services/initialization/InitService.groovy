@@ -26,7 +26,6 @@ class InitService {
         new Requestmap(url: '/**/**',    configAttribute: 'ROLE_USER').save()
         new Requestmap(url: '/profile/**',    configAttribute: 'ROLE_USER').save()
         new Requestmap(url: '/admin/**',      configAttribute: 'ROLE_ADMIN').save()
-        new Requestmap(url: '/admin/role/**', configAttribute: 'ROLE_SUPERVISOR').save()
         new Requestmap(url: '/admin/user/**',
                 configAttribute: 'ROLE_ADMIN').save()
         new Requestmap(url: '/login/impersonate',
