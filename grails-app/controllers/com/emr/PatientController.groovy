@@ -40,7 +40,6 @@ class PatientController {
         ]
     }
 
-
     /**
      * Saves patient and redirects to detail
      * @param patientInstance
@@ -57,11 +56,9 @@ class PatientController {
      * @return
      */
     def edit(Patient patientInstance) {
-
         render view: 'edit', model: [
                 patientInstance: patientInstance
         ]
-
     }
 
     /**
@@ -76,9 +73,5 @@ class PatientController {
 
     def delete() {
 
-    }
-
-    def vitals(Patient patientInstance){
-        render view: 'vitals'
     }
 }

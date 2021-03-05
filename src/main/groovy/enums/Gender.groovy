@@ -10,8 +10,9 @@ package enums
 
 enum Gender {
 
-    MALE('male'),
-    FEMALE('female')
+    MALE('Male'),
+    FEMALE('Female'),
+    OTHER('Other')
 
     final String value
 

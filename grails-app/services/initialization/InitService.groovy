@@ -5,6 +5,9 @@ import com.emr.Requestmap
 import com.emr.Role
 import com.emr.User
 import com.emr.UserRole
+import com.emr.Vital
+import enums.Ethnicity
+import enums.Gender
 import enums.Sex
 import grails.transaction.Transactional
 
@@ -25,7 +28,7 @@ class InitService {
         new Requestmap(url: '/admin/**',      configAttribute: 'ROLE_ADMIN').save()
         new Requestmap(url: '/admin/role/**', configAttribute: 'ROLE_SUPERVISOR').save()
         new Requestmap(url: '/admin/user/**',
-                configAttribute: 'ROLE_ADMIN,ROLE_SUPERVISOR').save()
+                configAttribute: 'ROLE_ADMIN').save()
         new Requestmap(url: '/login/impersonate',
                 configAttribute: 'ROLE_SWITCH_USER,IS_AUTHENTICATED_FULLY').save()
 
@@ -35,7 +38,6 @@ class InitService {
         }
 
         List<String> permissions = [
-                '/balanceStatus/**',
                 '/error',
                 '/**/favicon.ico',
                 '/shutdown',
@@ -45,53 +47,30 @@ class InitService {
                 '/**/images/**',
                 '/login', '/login.*', '/login/**',
                 '/logout', '/logout.*', '/logout/**',
-                '/api/mobileApp/**',
-                '/api/loanProductionContest/**',
                 '/login/ajaxSuccess',
                 '/login/ajaxSuccess/**',
                 '/**/ajaxSuccess/**',
-                '/api/document/**', // message broker needs the create method
         ]
         for (String url in permissions) {
             Requestmap.findOrSaveByUrlAndConfigAttribute(url, 'permitAll')
         }
 
-        List<String> financeUserPermissions = [
+        List<String> basicUserPermissions = [
                 '/**/**',
                 '/index',
                 '/index.gsp',
                 '/profile/**',
-                '/admin/balanceHistory/*',
-                '/admin/commissionExpense/*',
-                '/admin/ledger/**'
         ]
-        for (String url in financeUserPermissions) {
-            // view only users get the permission to view all pages, except the edit buttons are not shown to them, its handled in each gsp template
-            Requestmap.findOrSaveByUrlAndConfigAttribute(url, 'ROLE_ADMIN,ROLE_FINANCE_USER,ROLE_BOOKKEEPER,' +
-                    'ROLE_DOCUMENTATION_CLERK,ROLE_DIVISION_MANAGER,ROLE_MANAGER,ROLE_DIRECTOR_OF_FINANCE,ROLE_VIEW_ONLY')
-            // no space after comma
-        }
-
-        List<String> financeUserSpecificPermissions = [
-                //'/api/document/**',
-        ]
-        for (String url in financeUserSpecificPermissions) {
-            Requestmap.findOrSaveByUrlAndConfigAttribute(url, 'ROLE_FINANCE_USER')
+        for (String url in basicUserPermissions) {
+            Requestmap.findOrSaveByUrlAndConfigAttribute(url, 'ROLE_USER,ROLE_ADMIN')
         }
 
         List<String> adminUserPermissions = [
                 '/admin/**',
-                '/api/clock/**',
-                '/api/legacy/**',
-                '/api/systemSettings/**',
-                '/batch/**',
-                '/devTools/**',
-                '/performance/**',
-                '/loan/addLoanHistory/**',
-                '/loan/adjustment/**'
         ]
+
         for (String url in adminUserPermissions) {
-            Requestmap.findOrSaveByUrlAndConfigAttribute(url, 'ROLE_ADMIN,ROLE_DIRECTOR_OF_FINANCE')
+            Requestmap.findOrSaveByUrlAndConfigAttribute(url, 'ROLE_ADMIN')
         }
     }
 
@@ -125,18 +104,60 @@ class InitService {
     def initRoles(){
         Role adminRole = Role.findOrCreateByAuthority("ROLE_ADMIN")
 
-        UserRole userRole = UserRole.findOrCreateByUser('')
+        UserRole userRole = UserRole.findOrCreateByUser(User.findByUsername("bcarpenter"))
     }
 
 
     def initPatients(){
+
         Patient patient = new Patient(
-                firstName: "Brandon",
-                lastName:  "Carpenter",
-                middleName: "Nicholas",
+                firstName: "new",
+                middleName:  "friendly",
+                lastName: "client",
                 dateOfBirth: new Date(119, 01, 01),
                 sex: Sex.MALE,
+                gender: Gender.MALE,
+                ethnicity: Ethnicity.WHITE,
                 createdDate: new Date(),
+        ).save(flush:true, failOnError: true)
+
+        new Vital(
+                heightFeet: 5,
+                heightInches: 4,
+                weight: 130,
+                heartRate: 80,
+                systolicPressure: 120,
+                diastolicPressure: 80,
+                bodyTemperature: 98.5,
+                patient: patient,
+                createdBy: User.findByUsername('bcarpenter'),
+                createdDate: new Date()
+        ).save(flush:true, failOnError: true)
+
+        new Vital(
+                heightFeet: 5,
+                heightInches: 6,
+                weight: 135,
+                heartRate: 82,
+                systolicPressure: 130,
+                diastolicPressure: 75,
+                bodyTemperature: 97.5,
+                patient: patient,
+                createdBy: User.findByUsername('bcarpenter'),
+                createdDate: new Date()
+        ).save(flush:true, failOnError: true)
+
+        new Vital(
+                heightFeet: 5,
+                heightInches: 7,
+                weight: 140,
+                heartRate: 70,
+                systolicPressure: 110,
+                diastolicPressure: 90,
+                bodyTemperature: 99.5,
+                patient: patient,
+                createdBy: User.findByUsername('bcarpenter'),
+                createdDate: new Date()
         ).save(flush:true, failOnError: true)
     }
 }

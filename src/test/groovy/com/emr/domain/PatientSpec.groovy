@@ -29,6 +29,20 @@ class PatientSpec extends Specification {
             myPatient.firstName == 'New'
     }
 
+    void "setMiddleName()"(){
+        given:
+            Patient myPatient = new Patient()
+        when:
+            myPatient.firstName = "NEW"
+            myPatient.middleName = "HAPPY"
+            myPatient.lastName = "CLIENT"
+            myPatient.dateOfBirth = new Date()
+            myPatient.save()
+
+        then:
+            myPatient.middleName == 'Happy'
+    }
+
     void "setLastName()"(){
         given:
             Patient myPatient = new Patient()

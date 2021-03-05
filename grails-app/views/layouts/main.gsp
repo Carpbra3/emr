@@ -10,7 +10,7 @@
     <asset:stylesheet src="application.css"/>
     %{--["cerulean", "cosmo", "cyborg", "darkly", "flatly", "journal", "lumen", "paper", "readable", "sandstone", "simplex", "slate", "spacelab", "superhero", "united", "yeti"]--}%
     <link rel="stylesheet" href="/emr/assets/fontawesome5.14.0/css/all.min.css"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet"
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet"
           crossorigin="anonymous">
 
     <g:layoutHead/>

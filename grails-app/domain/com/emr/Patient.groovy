@@ -1,6 +1,14 @@
 package com.emr
 
+import enums.Ethnicity
 import enums.Gender
+
+/***************************
+ * Created by Brandon Carpenter.
+ * Date: 11/01/2020
+ * Description:
+ ****************************/
+
 import enums.Sex
 
 class Patient {
@@ -10,7 +18,10 @@ class Patient {
     String lastName
     Date dateOfBirth
     Sex sex
-//    Gender gender
+    Gender gender
+    String genderDescription
+    Ethnicity ethnicity
+    String ethnicityDescription
 
     Date createdDate
     Date deletedDate
@@ -25,6 +36,8 @@ class Patient {
         deletedDate nullable: true
         modifiedDate nullable: true
         dateOfBirth sqlType: 'date'
+        genderDescription nullable: true
+        ethnicityDescription nullable: true
     }
 
     static searchFields = [
@@ -41,15 +54,31 @@ class Patient {
         table "patient"
     }
 
+    /**
+     * formats the first name
+     * @param _firstName
+     */
     void setFirstName(String _firstName){
         String output = _firstName.substring(0, 1).toUpperCase() + _firstName.substring(1).toLowerCase()
         this.firstName = output
     }
 
+    /**
+     * formats the middle name
+     * @param _middleName
+     */
+    void setMiddleName(String _middleName){
+        String output = _middleName.substring(0, 1).toUpperCase() + _middleName.substring(1).toLowerCase()
+        this.middleName = output
+    }
+
+    /**
+     * formats the last name
+     * @param _lastName
+     */
     void setLastName(String _lastName){
         String output = _lastName.substring(0, 1).toUpperCase() + _lastName.substring(1).toLowerCase()
         this.lastName = output
     }
-
 
 }

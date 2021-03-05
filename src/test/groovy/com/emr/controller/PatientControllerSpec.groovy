@@ -19,14 +19,9 @@ import spock.lang.Specification
 @TestMixin(GrailsUnitTestMixin)
 class PatientControllerSpec extends Specification {
 
-    PatientService patientService
-
-
     def doWithSpring = TestHelper.doWithSpring
 
-
     def setup() {
-        patientService = TestHelper.getPatientService()
     }
 
     def cleanup() {
@@ -42,13 +37,7 @@ class PatientControllerSpec extends Specification {
 
     void "detail() should display detail page"(){
         when:
-            Patient patient = new Patient(
-                    firstName: 'new',
-                    lastName:  'client',
-                    dateOfBirth: new Date(),
-                    createdDate: new Date()
-            ).save(flush:true, failOnError: true)
-
+            Patient patient = TestHelper.getBasicPatient()
             controller.detail(patient)
         then:
             view == '/patient/detail'
@@ -63,13 +52,7 @@ class PatientControllerSpec extends Specification {
 
     void "save() should redirect to detail page"(){
         when:
-            Patient patient = new Patient()
-            patient.firstName = 'new'
-            patient.lastName = 'client'
-            patient.dateOfBirth = new Date()
-            patient.createdDate = new Date()
-            patient.save(flush: true, failOnError:true)
-
+            Patient patient = TestHelper.getBasicPatient()
             controller.save(patient)
         then:
             response.redirectedUrl == '/patient/detail/' + patient.id
@@ -77,12 +60,7 @@ class PatientControllerSpec extends Specification {
 
     void "edit() should display edit page"() {
         given:
-            Patient patient = new Patient(
-                    firstName: 'new',
-                    lastName:  'client',
-                    dateOfBirth: new Date(),
-                    createdDate: new Date()
-            ).save(flush:true, failOnError: true)
+            Patient patient = TestHelper.getBasicPatient()
         when:
             controller.edit(patient)
         then:

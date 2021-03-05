@@ -30,7 +30,6 @@ class UserServiceSpec extends Specification {
         springSecurityService = TestHelper.getSpringSecurityService()
         userService = TestHelper.getUserServiceWithDependencies()
         initService = TestHelper.getInitService()
-
         initService.initUsers()
 
     }

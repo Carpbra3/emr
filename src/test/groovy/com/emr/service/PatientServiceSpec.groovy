@@ -24,12 +24,7 @@ class PatientServiceSpec extends Specification {
 
     void "save() should save patient"() {
         given:
-            Patient patient = new Patient(
-                    firstName: 'new',
-                    lastName:  'cLIENT',
-                    dateOfBirth: new Date(),
-                    createdDate: new Date()
-            )
+            Patient patient = TestHelper.getBasicPatient()
         when:
             service.save(patient)
             Patient newPatient = Patient.list().getAt(0)
